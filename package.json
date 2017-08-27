@@ -29,7 +29,7 @@
     "build": "next build",
     "dev": "next",
     "precommit": "lint-staged",
-    "prettier": "./node_modules/.bin/prettier --write --use-tabs --single-quote true --trailing-comma all --print-width 80 --write 'src/**/*.js'",
+    "prettier": "./node_modules/.bin/prettier --write --use-tabs --single-quote true --trailing-comma all --print-width 80 --write 'components/**/*.js'",
     "start": "next start",
     "upg": "yarn upgrade-interactive"
   }
