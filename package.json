@@ -1,14 +1,22 @@
 {
-  "name": "create-next-example-app",
+  "name": "kfahub",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prettier": "./node_modules/.bin/prettier --write --use-tabs --single-quote true --trailing-comma all --print-width 80 --write 'src/**/*.js'",
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "next": "^3.0.6",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --use-tabs --single-quote true --trailing-comma all --print-width 80",
+      "git add"
+    ]
   },
   "devDependencies": {
     "eslint": "^4.5.0",
