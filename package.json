@@ -5,7 +5,8 @@
     "build": "next build",
     "start": "next start",
     "prettier": "./node_modules/.bin/prettier --write --use-tabs --single-quote true --trailing-comma all --print-width 80 --write 'src/**/*.js'",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "upg": "yarn upgrade-interactive"
   },
   "dependencies": {
     "next": "^3.0.6",
